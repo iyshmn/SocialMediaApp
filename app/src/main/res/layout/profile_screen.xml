@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:id="@+id/cl"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	tools:context=".profileActivity"
+	tools:ignore="LabelFor">
+
+
+	<View
+		android:id="@+id/_bg__profile_screen_ek2"
+		android:layout_width="0dp"
+		android:layout_height="0dp"
+		android:background="@drawable/_bg__profile_screen_ek2_shape"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent" />
+
+	<TextView
+		android:id="@+id/textView2"
+		android:layout_width="152dp"
+		android:layout_height="58dp"
+		android:fontFamily="@font/pompiere"
+		android:text="@string/profile_page_string"
+		android:textColor="@color/profile_page_color"
+		android:textSize="36sp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.011"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:layout_constraintVertical_bias="0.008" />
+
+	<ImageView
+		android:id="@+id/update_profile_picture"
+		android:layout_width="252dp"
+		android:layout_height="242dp"
+		android:contentDescription="@string/update_profile_picture_string"
+		app:layout_constraintBottom_toBottomOf="@+id/profile_img"
+		app:layout_constraintEnd_toEndOf="@+id/profile_img"
+		app:layout_constraintHorizontal_bias="1.0"
+		app:layout_constraintStart_toStartOf="@+id/profile_img"
+		app:layout_constraintTop_toTopOf="@+id/profile_img"
+		app:layout_constraintVertical_bias="1.0"
+		app:srcCompat="@drawable/profile" />
+
+	<ImageView
+		android:id="@+id/chat"
+		android:layout_width="55dp"
+		android:layout_height="46dp"
+		android:layout_marginTop="16dp"
+		android:layout_marginEnd="4dp"
+		android:contentDescription="@string/vector"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintTop_toTopOf="parent"
+		app:srcCompat="@drawable/vector" />
+
+	<de.hdodenhof.circleimageview.CircleImageView
+		android:id="@+id/profile_img"
+		android:layout_width="251dp"
+		android:layout_height="238dp"
+		android:layout_alignParentTop="true"
+		android:layout_alignParentEnd="true"
+		android:src="@drawable/ellipse_3_shape"
+		app:civ_border_color="#FF000000"
+		app:civ_border_width="2dp"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="@+id/chat"
+		app:layout_constraintHorizontal_bias="0.552"
+		app:layout_constraintStart_toStartOf="@+id/textView2"
+		app:layout_constraintTop_toBottomOf="@+id/chat"
+		app:layout_constraintVertical_bias="0.054"></de.hdodenhof.circleimageview.CircleImageView>
+
+	<TextView
+		android:id="@+id/about__usersername"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginTop="8dp"
+		android:fontFamily="@font/patrickhand"
+		android:text="@string/about__usersername_string"
+		android:textColor="@color/profile_page_color"
+		android:textSize="24sp"
+		app:layout_constraintBottom_toBottomOf="@+id/update_profile_picture"
+		app:layout_constraintEnd_toEndOf="@+id/gallary"
+		app:layout_constraintHorizontal_bias="0.642"
+		app:layout_constraintStart_toStartOf="@+id/gallary"
+		app:layout_constraintTop_toBottomOf="@+id/profile_img"
+		app:layout_constraintVertical_bias="0.145" />
+
+	<TextView
+		android:id="@+id/bioBox"
+		android:fontFamily="@font/patrickhand"
+		android:textColor="@color/profile_page_color"
+		android:textSize="24sp"
+		android:layout_width="@dimen/_220sdp"
+		android:layout_height="wrap_content"
+		android:layout_marginBottom="284dp"
+		android:autofillHints=""
+		android:ems="10"
+		android:labelFor="@id/about__usersername"
+		android:text="@string/bio"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.539"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/about__usersername"
+		app:layout_constraintVertical_bias="0.411" />
+
+	<ImageView
+		android:id="@+id/uploadImage"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:layout_marginStart="28dp"
+		android:contentDescription="@string/vector_ek3"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toStartOf="@+id/bioBox"
+		app:layout_constraintHorizontal_bias="0.0"
+		app:layout_constraintStart_toStartOf="parent"
+		app:layout_constraintTop_toBottomOf="@+id/bioBox"
+		app:srcCompat="@drawable/vector_ek3" />
+
+	<ImageView
+		android:id="@+id/gallary"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/vector_ek1"
+		app:layout_constraintBottom_toBottomOf="@+id/_bg__profile_screen_ek2"
+		app:layout_constraintEnd_toStartOf="@+id/friends"
+		app:layout_constraintHorizontal_bias="0.478"
+		app:layout_constraintStart_toEndOf="@+id/uploadImage"
+		app:layout_constraintTop_toBottomOf="@+id/update_profile_picture"
+		app:layout_constraintVertical_bias="0.64"
+		app:srcCompat="@drawable/vector_ek1" />
+
+	<ImageView
+		android:id="@+id/friends"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content"
+		android:contentDescription="@string/vector_ek2"
+		app:layout_constraintBottom_toBottomOf="parent"
+		app:layout_constraintEnd_toEndOf="parent"
+		app:layout_constraintHorizontal_bias="0.834"
+		app:layout_constraintStart_toEndOf="@+id/uploadImage"
+		app:layout_constraintTop_toBottomOf="@+id/bioBox"
+		app:srcCompat="@drawable/vector_ek2" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

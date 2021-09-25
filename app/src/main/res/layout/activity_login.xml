@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="12dp"
+    android:background="@color/green"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".registerActivity">
+
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="15dp"
+        android:hint="Email"
+        android:fontFamily="@font/patrickhand"
+        android:padding="10dp"
+        android:id="@+id/email"
+        android:textColor="@color/teal_700"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/edit_text_background"
+        android:layout_marginTop="15dp"
+        android:hint="Password"
+
+        android:padding="10dp"
+        android:fontFamily="@font/patrickhand"
+        android:id="@+id/password"
+
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="15sp"
+        android:text="LOGIN"
+        android:padding="10dp"
+        android:id="@+id/login"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/patrickhand"
+        android:text="New User? Please Register"
+        android:background="@drawable/button_background"
+        android:layout_marginTop="15dp"
+        android:id="@+id/register_user"/>
+
+</LinearLayout>

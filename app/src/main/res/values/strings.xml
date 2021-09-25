@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Chats</string>
+    <string name="ek_img_content">ExportKit Image</string>
+    <string name="profile_page_string">Profile Page</string>
+    <string name="update_profile_picture_string">update profile picture</string>
+    <string name="about__usersername_string">About @usersername</string>
+    <string name="vector">vector</string>
+    <string name="vector_ek1">vector_ek1</string>
+    <string name="vector_ek2">vector_ek2</string>
+    <string name="vector_ek3">vector_ek3</string>
+    <string name="chat_activity">chat Activity</string>
+    <string name="bio">Write your Bio</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="save">Save</string>
+    <string name="search">Search...</string>
+    <string name="username">username</string>
+    <string name="full_name">Full name</string>
+    <string name="string_username">username</string>
+    <string name="usersername_string">About @usersername</string>
+
+</resources>
